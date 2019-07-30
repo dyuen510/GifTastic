@@ -55,3 +55,8 @@ button:active{
 body{
     background-color:gray;
 }
+
+#gifs{
+    margin-left:200px;
+    padding:30px;
+}
