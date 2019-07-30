@@ -5,92 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GifTastic</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    
+    
 </head>
 <body>
-    <h1>Animal Search</h1>
-    <div id="button-view"></div>
-    <form id="animal-form">
-        <input type="text" id="animal-input"><br>
-        <input id= "addAnimal" type="submit" value = "add an animal!">
-    </form>
-
-    <div id="gifs"></div>
+        <h1>Animal Search</h1>
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-    
-    
-    var animal = ["Whale", "Zebra", "Giraffes", "Snake"];
-
-    function renderButtons(){
-        $('#button-view').empty();
-        for (var i=0; i<animal.length;i++){
-            createButton(animal[i]);
-        }
-    }
-    function createButton(aName){
-        var b =$('<button>');
-        b.text(aName);
-        b.attr('class','bAnimal')
-        $('#button-view').append(b);
-    }
-
-    $("#addAnimal").on("click", function() {
-        var v = $("#animal-input").val();
-
-        animal.push(v);
-        createButton(v);
         
-        event.preventDefault();
-
-        $("#animal-input").val("");
-     });
-
-     $(document).on('click','.bAnimal',function(){
-         var animalName = $(this).text();
-         var queryURL="https://api.giphy.com/v1/gifs/search?api_key=ZiFFnncAkeptJo40VQRABsE0pqzBcWbV&q="+ animalName +"&limit=10&offset=0&rating=G&lang=en"
-
-         $.ajax({
-             url:queryURL,
-             method:'GET'
-         }).then(function(response){
-             console.log(response);
-             for (var i=0; i<response.data.length;i++){
-                 var img=$('<img>');
-                 img.attr('src',response.data[i].images.downsized_large.url);
-                 $('#gifs').append(img);
-             }
-         })
-     })
-
-        renderButtons();
-  
-    
-
-    // function renderButtons(){
-    //     $('#button-view').empty();
-    //     for (var i=0; i<animal.length; i++){
-    //       var b = $('<button>');
-    //       b.text(animal[i]);
-    //       $('#button-view').append(b);
-          
-    //     }
-    // }
-    //  renderButtons();
-
-    // $(document).on('click','.animal',function(){
-    //     var an = $(this).data('name');
-    //     var queryURL="https://api.giphy.com/v1/gifs/search?" + an + "api_key=ZiFFnncAkeptJo40VQRABsE0pqzBcWbV&q=&limit=10&offset=0&rating=G&lang=en"
-    //     $.ajax({
-    //         url:queryURL,
-    //         method:"GET"
-    //     }).done(function(response){
-    //         console.log(response);
-    //     })
-    // })
-    
-   
-
-</script>
+        <div id="button-view"></div>
+        <form id="animal-form">
+            <input type="text" id="animal-input"><br>
+            <input id= "addAnimal" type="submit" value = "add an animal!">
+        </form>
+     
+       
+                <div id="gifs"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
