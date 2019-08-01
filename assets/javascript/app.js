@@ -31,7 +31,7 @@
              url:queryURL,
              method:'GET'
          }).then(function(response){
-             console.log(response);
+            //  console.log(response);
              for (var i=0; i<response.data.length;i++){
                  var img=$('<img>');
                  var p = $("<p>").text("Rating: " + response.data[i].rating);
@@ -58,8 +58,10 @@
                 $(this).attr('src', stillGif);
                 $(this).attr('data-state','still')
              }
+             $(document).on('click','.gif',changeState);
          }
-       $(document).on('click','.gif',changeState);
-     })
-
-        renderButtons();
+         $(document).on('click','.gif',changeState);
+       
+     });
+     renderButtons();
+    

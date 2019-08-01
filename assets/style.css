@@ -58,5 +58,10 @@ body{
 
 #gifs{
     margin-left:200px;
-    padding:30px;
+   
+}
+
+img{
+    width:500px;
+    display:flex;
 }
