@@ -58,10 +58,9 @@
                 $(this).attr('src', stillGif);
                 $(this).attr('data-state','still')
              }
-             $(document).on('click','.gif',changeState);
+        
          }
          $(document).on('click','.gif',changeState);
-       
      });
      renderButtons();
     
