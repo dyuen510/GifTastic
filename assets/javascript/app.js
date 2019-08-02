@@ -57,6 +57,7 @@
              }else if (state=='animate'){
                 $(this).attr('src', stillGif);
                 $(this).attr('data-state','still')
+                $(document).on('click','.gif',changeState);
              }
         
          }
