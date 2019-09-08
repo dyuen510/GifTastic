@@ -7,9 +7,9 @@ h1{
 }
 
 #animal-form{
-    position: absolute;
+    position:fixed;
+    left:800px;
     top:140px;
-    left:1000px;
 }
 
 button{
@@ -20,6 +20,7 @@ button{
     border-radius:50%;
     cursor:pointer;
     outline:none;
+    
 }
 
 button:hover{
@@ -38,7 +39,7 @@ button:active{
 
 #button-view{
     padding:15px;
-    width:800px;
+    width:700px;
 }
 
 #animal-input{
