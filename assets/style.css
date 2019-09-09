@@ -29,11 +29,11 @@ button{
 button:hover{
     background-color:darkslategray;
 }
-
+/* 
 button:active{
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
+    /* transform: translateY(4px); */
+} */
 
 #container{
     border-style:1px solid black;
@@ -43,8 +43,8 @@ button:active{
 #button-view{
     padding:15px;
     width:700px;
-    position:relative;
-    top:100px;
+    position:fixed;
+    top:180px;
 }
 
 #animal-input{
@@ -53,9 +53,8 @@ button:active{
     font-size:30px;
 }
 #addAnimal{
-    width:120px;
+    width:150px;
     font-size:40px;
- 
 }
 
 body{
