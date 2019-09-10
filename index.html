@@ -5,27 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 
-
+    <title>Animal Search</title>
 </head>
 
 <body>
-    <h1>Animal Search</h1>
+    <div class='content'>
+        <div class='row'>
+            <div class='col-sm-3 col-md-6'>
+                <h1>Animal Search</h1>
+            </div>
+        </div>
 
-    <div id = 'button-container'>
-    <div id="button-view"></div>
-    </div>
-    <form id="animal-form">
-        <input type="text" id="animal-input"><br>
-        <input id="addAnimal" type="submit" value="add an animal!">
-    </form>
+        <div class='row'>
+            <div class='col-sm-3 col-md-6'>
+                <form id="animal-form">
+                    <input type="text" id="animal-input"><br>
+                    <input id="addAnimal" type="submit" value="add an animal!">
+                </form>
+            </div>
+        </div>
 
+        <div class='row'>
+            <div class='col-sm-3 col-md-12'>
+                <div id='button-view'></div>
+            </div>
+        </div>
 
-    <div id="gifs"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+        <div class='row'>
+            <div class='col-sm-3 col-md-12'>
+                <div id="gifs"></div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>

@@ -1,72 +1,44 @@
-
+.content{
+    background: url('image.jpeg');
+    height:350vh;
+    max-width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:center;
+}
 h1{
-    position:relative;
-    left:180px;
-    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-    font-size:65px;
+    font-size:80px;
+    margin:20px;
+    display:flex;
+    align-items:center;
+}
+
+#addAnimal{
+    background-color:antiquewhite;
+    color:gray;
 }
 
 #animal-form{
-    float:left;
-    position:absolute;
-    top:130px;
-    left:190px;
-
-}
-
-button{
-    background-color:black;
-    color:white;
-    padding:20px 20px;
-    font-size:18px;
-    border-radius:50%;
-    cursor:pointer;
-    outline:none;
-    float:right;
-    
-}
-
-button:hover{
-    background-color:darkslategray;
-}
-/* 
-button:active{
-    box-shadow: 0 5px #666;
-    /* transform: translateY(4px); */
-} */
-
-#container{
-    border-style:1px solid black;
-    border-width:10px;
+    margin-left:30px;
+    margin-bottom:30px;
 }
 
 #button-view{
-    padding:15px;
-    width:700px;
-    position:fixed;
-    top:180px;
+    margin-left:30px;
 }
 
-#animal-input{
-    width:200px;
-    height:30px;
-    font-size:30px;
+button{
+    color:gray;
+    background-color:antiquewhite;
+    border-radius:50%;
+    cursor:pointer;
+    padding:10px;
 }
-#addAnimal{
-    width:150px;
-    font-size:40px;
-}
-
-body{
-    background-color:gray;
+button:hover{
+    background-color:darkslategray;
 }
 
 #gifs{
-    /* margin-left:200px; */
-    float:right;
-}
-
-img{
-    width:500px;
-    display:flex;
+    margin-left:50px;
+    color:white;
 }
