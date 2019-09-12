@@ -25,7 +25,7 @@ $("#addAnimal").on("click", function () {
 
 $(document).on('click', '.bAnimal', function () {
     var animalName = $(this).text();
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=ZiFFnncAkeptJo40VQRABsE0pqzBcWbV&q=" + animalName + "&limit=10&offset=0&rating=G&lang=en"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=ZiFFnncAkeptJo40VQRABsE0pqzBcWbV&q=" + animalName + "&limit=5&offset=0&rating=G&lang=en"
     $('#gifs').empty();
     $.ajax({
         url: queryURL,
