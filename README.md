@@ -6,6 +6,6 @@ Once the gifs is clicked, it would change the state of that specific gif and put
 Clicking it again would change the state again and make it motionless. 
 
 
-![](assets/search.gif)
+![](search.gif)
 
 App created with html, css, ajax calls, api key from giphy.com and javascript/Jquery.
